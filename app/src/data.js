@@ -1,4 +1,4 @@
-{
+var datajson= {
   "upLostData ": [
     {
       "transMode ": "1 ",
@@ -5102,35 +5102,37 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ":  [  ndwServerTime: 2018-07-27 18: 05: 05  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 6101940  ndwGroupNum: 136386  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 5032  nuiConnIp: 183.36.112.40  nuiConnPort: 50763  ndwCenterIp: 10.229.147.149  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name: "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998  "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:"nubia  "     product:"nx563j  "     model:"nx563j  "     fingerprint:"nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys  "
-          }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:"android   "   uint32_link_type: 1   str_client_version:"1.9.8.20.release- 37914  "  n
-        }  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:"    000    260    000    260  "   bytes_audio_decode:"    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx  "  n
-        }  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:"Android  "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15
-            }     uint32_video_src_type: 1
-          }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
-          }   bytes_vp8_enc: "    377    017    000    000  "   bytes_vp8_dec:"    377    377    000    000  "   bytes_h264_enc:"    377    017    000    000  "   bytes_h264_dec:"    377    377    000    000  "
-        }  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1
-          }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1
-          }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80
-          }
-        }],
+      //"enterRoomAbility ":  ""
+      // "[  ndwServerTime: 2018-07-27 18: 05: 05  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 6101940  ndwGroupNum: 136386  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 5032  nuiConnIp: 183.36.112.40  nuiConnPort: 50763  ndwCenterIp: 10.229.147.149  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name: \"aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998  \"     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:\"nubia  \"     product:\"nx563j  \"     model:\"nx563j  \"     fingerprint:\"nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys\"
+      //     }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:\"android   \"   uint32_link_type: 1   str_client_version:\"1.9.8.20.release- 37914\"  
+      //   }  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:\"    000    260    000    260  \"   bytes_audio_decode:\"    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx  \"  n
+      //   }  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:\"Android  \"     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15
+      //       }     uint32_video_src_type: 1
+      //     }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag: 0
+      //     }   bytes_vp8_enc: \"    377    017    000    000  \"   bytes_vp8_dec:\"    377    377    000    000  \"   bytes_h264_enc:\"    377    017    000    000  \"   bytes_h264_dec:\"    377    377    000    000  \"
+      //   }  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1
+      //     }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1
+      //     }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80
+      //     }
+      //   }]",
+      //,
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -5204,280 +5206,281 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": " [  ndwServerTime: 2018-07-27 18:05:05  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 6101940  ndwGroupNum: 136386  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 5032  nuiConnIp: 183.36.112.40  nuiConnPort: 50763  ndwCenterIp: 10.229.147.149  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit { 
-        str_CPU_name:   \"aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998  \" 
-           uint32_CPU_maxfreq: 1900 
-           uint32_CPU_num: 8 
-           uint64_CPUID: 1 
-           uint64_CPU_instruction_set: 2047 
-           uint32_CPU_L2: 
-           uint32_CPU_L3: 
-           manufacturer:   \"nubia  \" 
-           product:   \"nx563j  \" 
-           model:   \"nx563j  \" 
-           fingerprint:   \"nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys  \" 
-          } 
-         uint32_net_type: 1 
-         uint32_terminal_type: 4 
-         uint32_device_type: 2 
-         str_os_verion:   \"android   \" 
-         uint32_link_type: 1 
-         str_client_version:   \"1.9.8.20.release- 37914  \"  n}  nmsg_audio_limit { 
-          uint32_check_info: 
-         uint32_version: 2 
-         uint32_max_mix_channels: 
-         bytes_audio_encode:   \"    000    260    000    260  \" 
-         bytes_audio_decode:   \"    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx  \"  n}  nmsg_video_limit { 
-          msg_camera_limit { 
-          str_camera_auth_name:   \"Android  \" 
-           rpt_video_format { 
-            uint32_width: 320 
-             uint32_height: 240 
-             uint32_max_FPS: 15 
-            } 
-           uint32_video_src_type: 1 
-          } 
-         uint32_screen_width: 1280 
-         uint32_screen_height: 720 
-         uint32_support_arq: 
-         uint32_support_kalman: 
-         uint32_support_qstar: 
-         uint32_support_hwacc: 
-         uint32_fec_type: 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 2 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 20 
-           uint32_max_bitrate: 1024 
-           uint32_max_MBPS: 24000 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 2 
-           uint32_direct: 2 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 20 
-           uint32_max_bitrate: 1024 
-           uint32_max_MBPS: 24000 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 3 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 3 
-           uint32_direct: 2 
-           uint32_max_width: 720 
-           uint32_max_height: 1280 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 4 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 4 
-           uint32_direct: 2 
-           uint32_max_width: 720 
-           uint32_max_height: 1280 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 5 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 5 
-           uint32_direct: 2 
-           uint32_max_width: 720 
-           uint32_max_height: 1280 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         rpt_msg_video_codec_limit { 
-          uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-          } 
-         bytes_vp8_enc:   \"    377    017    000    000  \" 
-         bytes_vp8_dec:   \"    377    377    000    000  \" 
-         bytes_h264_enc:   \"    377    017    000    000  \" 
-         bytes_h264_dec:   \"    377    377    000    000  \"  n}  nmsg_speci_param { 
-          msg_speci_udtparam { 
-          uint32_spciudt_flag: 1 
-           uint32_spciudt_switch: 1 
-          } 
-         msg_speci_vidparam { 
-          uint32_spcivid_width: 640 
-           uint32_spcivid_height: 368 
-           uint32_spcivid_fps: 20 
-           uint32_spcivid_qcleargrade: 
-           uint32_spcivid_fecswh: 1 
-           uint32_spcivid_maxbitrate: 800 
-           uint32_spcivid_minbitrate: 500 
-           uint32_spcivid_smallvidswh: 
-           uint32_spcivid_roletype: 1 
-          } 
-         msg_speci_audparam { 
-          uint32_spciaud_codec: 4129 
-           uint32_spciaud_fs: 48000 
-           uint32_spciaud_ch: 1 
-           uint32_spciaud_duration: 20 
-           uint32_spciaud_bitrate: 32000 
-           uint32_spciaud_aecflag: 1 
-           uint32_spciaud_agcflag: 1 
-           uint32_spciaud_ansflag: 1 
-           uint32_spciaud_vadflag: 1 
-           uint32_spciaud_fecflag: 1 
-           uint32_jitter_minmax_delay_ms: 400 
-           uint32_jitter_maxmax_delay_ms: 1000 
-           uint32_jitter_drop_scalfactor: 100 
-           uint32_jitter_min_delay_ms: 80 
-           }  } ]"
-       ,
+     // "enterRoomAbility ": 
+      // " [  ndwServerTime: 2018-07-27 18:05:05  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 6101940  ndwGroupNum: 136386  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 5032  nuiConnIp: 183.36.112.40  nuiConnPort: 50763  ndwCenterIp: 10.229.147.149  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit { 
+      //   str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998  " 
+      //      uint32_CPU_maxfreq: 1900 
+      //      uint32_CPU_num: 8 
+      //      uint64_CPUID: 1 
+      //      uint64_CPU_instruction_set: 2047 
+      //      uint32_CPU_L2: 
+      //      uint32_CPU_L3: 
+      //      manufacturer:   \"nubia  \" 
+      //      product:   \"nx563j  \" 
+      //      model:   \"nx563j  \" 
+      //      fingerprint:   \"nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys  \" 
+      //     } 
+      //    uint32_net_type: 1 
+      //    uint32_terminal_type: 4 
+      //    uint32_device_type: 2 
+      //    str_os_verion:   \"android   \" 
+      //    uint32_link_type: 1 
+      //    str_client_version:   \"1.9.8.20.release- 37914  \"  n}  nmsg_audio_limit { 
+      //     uint32_check_info: 
+      //    uint32_version: 2 
+      //    uint32_max_mix_channels: 
+      //    bytes_audio_encode:   \"    000    260    000    260  \" 
+      //    bytes_audio_decode:   \"    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx  \"  n}  nmsg_video_limit { 
+      //     msg_camera_limit { 
+      //     str_camera_auth_name:   \"Android  \" 
+      //      rpt_video_format { 
+      //       uint32_width: 320 
+      //        uint32_height: 240 
+      //        uint32_max_FPS: 15 
+      //       } 
+      //      uint32_video_src_type: 1 
+      //     } 
+      //    uint32_screen_width: 1280 
+      //    uint32_screen_height: 720 
+      //    uint32_support_arq: 
+      //    uint32_support_kalman: 
+      //    uint32_support_qstar: 
+      //    uint32_support_hwacc: 
+      //    uint32_fec_type: 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 2 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 20 
+      //      uint32_max_bitrate: 1024 
+      //      uint32_max_MBPS: 24000 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 2 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 20 
+      //      uint32_max_bitrate: 1024 
+      //      uint32_max_MBPS: 24000 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 3 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 3 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 720 
+      //      uint32_max_height: 1280 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 4 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 4 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 720 
+      //      uint32_max_height: 1280 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 5 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 5 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 720 
+      //      uint32_max_height: 1280 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    rpt_msg_video_codec_limit { 
+      //     uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //     } 
+      //    bytes_vp8_enc:   \"    377    017    000    000  \" 
+      //    bytes_vp8_dec:   \"    377    377    000    000  \" 
+      //    bytes_h264_enc:   \"    377    017    000    000  \" 
+      //    bytes_h264_dec:   \"    377    377    000    000  \"  n}  nmsg_speci_param { 
+      //     msg_speci_udtparam { 
+      //     uint32_spciudt_flag: 1 
+      //      uint32_spciudt_switch: 1 
+      //     } 
+      //    msg_speci_vidparam { 
+      //     uint32_spcivid_width: 640 
+      //      uint32_spcivid_height: 368 
+      //      uint32_spcivid_fps: 20 
+      //      uint32_spcivid_qcleargrade: 
+      //      uint32_spcivid_fecswh: 1 
+      //      uint32_spcivid_maxbitrate: 800 
+      //      uint32_spcivid_minbitrate: 500 
+      //      uint32_spcivid_smallvidswh: 
+      //      uint32_spcivid_roletype: 1 
+      //     } 
+      //    msg_speci_audparam { 
+      //     uint32_spciaud_codec: 4129 
+      //      uint32_spciaud_fs: 48000 
+      //      uint32_spciaud_ch: 1 
+      //      uint32_spciaud_duration: 20 
+      //      uint32_spciaud_bitrate: 32000 
+      //      uint32_spciaud_aecflag: 1 
+      //      uint32_spciaud_agcflag: 1 
+      //      uint32_spciaud_ansflag: 1 
+      //      uint32_spciaud_vadflag: 1 
+      //      uint32_spciaud_fecflag: 1 
+      //      uint32_jitter_minmax_delay_ms: 400 
+      //      uint32_jitter_maxmax_delay_ms: 1000 
+      //      uint32_jitter_drop_scalfactor: 100 
+      //      uint32_jitter_min_delay_ms: 80 
+      //      }  } ]"
+   //    "",
      "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -5551,280 +5554,282 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ":"[  ndwServerTime: 2018-07-27 18:05:11  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2442  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit { 
-         msg_cpu_limit { 
-           str_CPU_name:    \"aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   \" 
-           uint32_CPU_maxfreq: 1900 
-           uint32_CPU_num: 8 
-           uint64_CPUID: 1 
-           uint64_CPU_instruction_set: 2047 
-           uint32_CPU_L2: 
-           uint32_CPU_L3: 
-           manufacturer:    \"nubia   \" 
-           product:    \"nx563j   \" 
-           model:    \"nx563j   \" 
-           fingerprint:    \"nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   \" 
-         } 
-         uint32_net_type: 1 
-         uint32_terminal_type: 4 
-         uint32_device_type: 2 
-         str_os_verion:    \"android    \" 
-         uint32_link_type: 1 
-         str_client_version:    \"1.9.8.20.release- 37914   \"  n}  nmsg_audio_limit { 
-         uint32_check_info: 
-         uint32_version: 2 
-         uint32_max_mix_channels: 
-         bytes_audio_encode:    \"    000    260    000    260   \" 
-         bytes_audio_decode:    \"    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   \"  n}  nmsg_video_limit { 
-         msg_camera_limit { 
-           str_camera_auth_name:    \"Android   \" 
-           rpt_video_format { 
-             uint32_width: 320 
-             uint32_height: 240 
-             uint32_max_FPS: 15 
-           } 
-           uint32_video_src_type: 1 
-         } 
-         uint32_screen_width: 1280 
-         uint32_screen_height: 720 
-         uint32_support_arq: 
-         uint32_support_kalman: 
-         uint32_support_qstar: 
-         uint32_support_hwacc: 
-         uint32_fec_type: 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 2 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 20 
-           uint32_max_bitrate: 1024 
-           uint32_max_MBPS: 24000 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 2 
-           uint32_direct: 2 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 20 
-           uint32_max_bitrate: 1024 
-           uint32_max_MBPS: 24000 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 3 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 3 
-           uint32_direct: 2 
-           uint32_max_width: 720 
-           uint32_max_height: 1280 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 4 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 4 
-           uint32_direct: 2 
-           uint32_max_width: 720 
-           uint32_max_height: 1280 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 5 
-           uint32_direct: 1 
-           uint32_max_width: 480 
-           uint32_max_height: 640 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 5 
-           uint32_direct: 2 
-           uint32_max_width: 720 
-           uint32_max_height: 1280 
-           uint32_max_FPS: 30 
-           uint32_max_bitrate: 5120 
-           uint32_max_MBPS: 1500 
-           uint32_FEC_flag: 1 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         rpt_msg_video_codec_limit { 
-           uint32_engine_type: 
-           uint32_direct: 
-           uint32_max_width: 
-           uint32_max_height: 
-           uint32_max_FPS: 
-           uint32_max_bitrate: 
-           uint32_max_MBPS: 
-           uint32_FEC_flag: 
-           uint32_hw_flag: 
-         } 
-         bytes_vp8_enc:    \"    377    017    000    000   \" 
-         bytes_vp8_dec:    \"    377    377    000    000   \" 
-         bytes_h264_enc:    \"    377    017    000    000   \" 
-         bytes_h264_dec:    \"    377    377    000    000   \"  n}  nmsg_speci_param { 
-         msg_speci_udtparam { 
-           uint32_spciudt_flag: 1 
-           uint32_spciudt_switch: 1 
-         } 
-         msg_speci_vidparam { 
-           uint32_spcivid_width: 640 
-           uint32_spcivid_height: 368 
-           uint32_spcivid_fps: 20 
-           uint32_spcivid_qcleargrade: 
-           uint32_spcivid_fecswh: 1 
-           uint32_spcivid_maxbitrate: 800 
-           uint32_spcivid_minbitrate: 500 
-           uint32_spcivid_smallvidswh: 
-           uint32_spcivid_roletype: 1 
-         } 
-         msg_speci_audparam { 
-           uint32_spciaud_codec: 4129 
-           uint32_spciaud_fs: 48000 
-           uint32_spciaud_ch: 1 
-           uint32_spciaud_duration: 20 
-           uint32_spciaud_bitrate: 32000 
-           uint32_spciaud_aecflag: 1 
-           uint32_spciaud_agcflag: 1 
-           uint32_spciaud_ansflag: 1 
-           uint32_spciaud_vadflag: 1 
-           uint32_spciaud_fecflag: 1 
-           uint32_jitter_minmax_delay_ms: 400 
-           uint32_jitter_maxmax_delay_ms: 1000 
-           uint32_jitter_drop_scalfactor: 100 
-           uint32_jitter_min_delay_ms: 80 
-         }  }  ] ",
+     // "enterRoomAbility ":
+      // "[  ndwServerTime: 2018-07-27 18:05:11  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2442  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit { 
+      //    msg_cpu_limit { 
+      //      str_CPU_name:    \"aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   \" 
+      //      uint32_CPU_maxfreq: 1900 
+      //      uint32_CPU_num: 8 
+      //      uint64_CPUID: 1 
+      //      uint64_CPU_instruction_set: 2047 
+      //      uint32_CPU_L2: 
+      //      uint32_CPU_L3: 
+      //      manufacturer:    \"nubia   \" 
+      //      product:    \"nx563j   \" 
+      //      model:    \"nx563j   \" 
+      //      fingerprint:    \"nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   \" 
+      //    } 
+      //    uint32_net_type: 1 
+      //    uint32_terminal_type: 4 
+      //    uint32_device_type: 2 
+      //    str_os_verion:    \"android    \" 
+      //    uint32_link_type: 1 
+      //    str_client_version:    \"1.9.8.20.release- 37914   \"  n}  nmsg_audio_limit { 
+      //    uint32_check_info: 
+      //    uint32_version: 2 
+      //    uint32_max_mix_channels: 
+      //    bytes_audio_encode:    \"    000    260    000    260   \" 
+      //    bytes_audio_decode:    \"    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   \"  n}  nmsg_video_limit { 
+      //    msg_camera_limit { 
+      //      str_camera_auth_name:    \"Android   \" 
+      //      rpt_video_format { 
+      //        uint32_width: 320 
+      //        uint32_height: 240 
+      //        uint32_max_FPS: 15 
+      //      } 
+      //      uint32_video_src_type: 1 
+      //    } 
+      //    uint32_screen_width: 1280 
+      //    uint32_screen_height: 720 
+      //    uint32_support_arq: 
+      //    uint32_support_kalman: 
+      //    uint32_support_qstar: 
+      //    uint32_support_hwacc: 
+      //    uint32_fec_type: 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 2 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 20 
+      //      uint32_max_bitrate: 1024 
+      //      uint32_max_MBPS: 24000 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 2 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 20 
+      //      uint32_max_bitrate: 1024 
+      //      uint32_max_MBPS: 24000 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 3 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 3 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 720 
+      //      uint32_max_height: 1280 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 4 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 4 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 720 
+      //      uint32_max_height: 1280 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 5 
+      //      uint32_direct: 1 
+      //      uint32_max_width: 480 
+      //      uint32_max_height: 640 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 5 
+      //      uint32_direct: 2 
+      //      uint32_max_width: 720 
+      //      uint32_max_height: 1280 
+      //      uint32_max_FPS: 30 
+      //      uint32_max_bitrate: 5120 
+      //      uint32_max_MBPS: 1500 
+      //      uint32_FEC_flag: 1 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    rpt_msg_video_codec_limit { 
+      //      uint32_engine_type: 
+      //      uint32_direct: 
+      //      uint32_max_width: 
+      //      uint32_max_height: 
+      //      uint32_max_FPS: 
+      //      uint32_max_bitrate: 
+      //      uint32_max_MBPS: 
+      //      uint32_FEC_flag: 
+      //      uint32_hw_flag: 
+      //    } 
+      //    bytes_vp8_enc:    \"    377    017    000    000   \" 
+      //    bytes_vp8_dec:    \"    377    377    000    000   \" 
+      //    bytes_h264_enc:    \"    377    017    000    000   \" 
+      //    bytes_h264_dec:    \"    377    377    000    000   \"  n}  nmsg_speci_param { 
+      //    msg_speci_udtparam { 
+      //      uint32_spciudt_flag: 1 
+      //      uint32_spciudt_switch: 1 
+      //    } 
+      //    msg_speci_vidparam { 
+      //      uint32_spcivid_width: 640 
+      //      uint32_spcivid_height: 368 
+      //      uint32_spcivid_fps: 20 
+      //      uint32_spcivid_qcleargrade: 
+      //      uint32_spcivid_fecswh: 1 
+      //      uint32_spcivid_maxbitrate: 800 
+      //      uint32_spcivid_minbitrate: 500 
+      //      uint32_spcivid_smallvidswh: 
+      //      uint32_spcivid_roletype: 1 
+      //    } 
+      //    msg_speci_audparam { 
+      //      uint32_spciaud_codec: 4129 
+      //      uint32_spciaud_fs: 48000 
+      //      uint32_spciaud_ch: 1 
+      //      uint32_spciaud_duration: 20 
+      //      uint32_spciaud_bitrate: 32000 
+      //      uint32_spciaud_aecflag: 1 
+      //      uint32_spciaud_agcflag: 1 
+      //      uint32_spciaud_ansflag: 1 
+      //      uint32_spciaud_vadflag: 1 
+      //      uint32_spciaud_fecflag: 1 
+      //      uint32_jitter_minmax_delay_ms: 400 
+      //      uint32_jitter_maxmax_delay_ms: 1000 
+      //      uint32_jitter_drop_scalfactor: 100 
+      //      uint32_jitter_min_delay_ms: 80 
+      //    }  }  ] ",
+    //  "",
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -5898,7 +5903,7 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:11  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2442  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+    //  "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:11  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2442  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -5972,7 +5977,7 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:17  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 3875260  ndwGroupNum: 136598  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1930  nuiConnIp: 183.36.112.47  nuiConnPort: 41029  ndwCenterIp: 10.244.138.28  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+     // "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:17  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 3875260  ndwGroupNum: 136598  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1930  nuiConnIp: 183.36.112.47  nuiConnPort: 41029  ndwCenterIp: 10.244.138.28  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -6046,7 +6051,8 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:17  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 3875260  ndwGroupNum: 136598  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1930  nuiConnIp: 183.36.112.47  nuiConnPort: 41029  ndwCenterIp: 10.244.138.28  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+     // "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:17  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 3875260  ndwGroupNum: 136598  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1930  nuiConnIp: 183.36.112.47  nuiConnPort: 41029  ndwCenterIp: 10.244.138.28  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  }  ]  "
+     // ,
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -6120,7 +6126,8 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:26  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2450  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+    //  "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:26  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2450  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  "
+     // ,
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -6194,7 +6201,7 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:26  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2450  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+     // "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:26  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 4003063  ndwGroupNum: 136654  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 2450  nuiConnIp: 183.2.186.158  nuiConnPort: 48749  ndwCenterIp: 10.245.80.143  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -6268,7 +6275,7 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:32  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 5708333  ndwGroupNum: 136656  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1805  nuiConnIp: 183.36.112.52  nuiConnPort: 46045  ndwCenterIp: 10.229.146.226  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+     // "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:32  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 5708333  ndwGroupNum: 136656  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1805  nuiConnIp: 183.36.112.52  nuiConnPort: 46045  ndwCenterIp: 10.229.146.226  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -6342,7 +6349,7 @@
       "height1 ": 240,
       "spciVideoAnchorType ": 0,
       "screenHeight ": 720,
-      "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:32  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 5708333  ndwGroupNum: 136656  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1805  nuiConnIp: 183.36.112.52  nuiConnPort: 46045  ndwCenterIp: 10.229.146.226  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
+     // "enterRoomAbility ": "[  ndwServerTime: 2018-07-27 18:05:32  ndwBussType: 7  ndwSdkAppId: 1400027849  nddwUin: 144115211207886230  ndwRoomId: 5708333  ndwGroupNum: 136656  ndwAuthMode: 6  nisProxy:  nisTcp:  ntransMode: 1  nuiClientIP: 59.37.125.38  nunClientPort: 1805  nuiConnIp: 183.36.112.52  nuiConnPort: 46045  ndwCenterIp: 10.229.146.226  ndwCenterPort: 43105  nmsg_general_limit {   msg_cpu_limit {     str_CPU_name:    "aarch64 processor rev 4 (aarch64)|qualcomm technologies, inc msm8998   "     uint32_CPU_maxfreq: 1900     uint32_CPU_num: 8     uint64_CPUID: 1     uint64_CPU_instruction_set: 2047     uint32_CPU_L2:     uint32_CPU_L3:     manufacturer:    "nubia   "     product:    "nx563j   "     model:    "nx563j   "     fingerprint:    "nubia/nx563j/nx563j: 7.1.1/nmf26x/eng.nubia.20170802.165340:user/release-keys   "   }   uint32_net_type: 1   uint32_terminal_type: 4   uint32_device_type: 2   str_os_verion:    "android    "   uint32_link_type: 1   str_client_version:    "1.9.8.20.release- 37914   "  n}  nmsg_audio_limit {   uint32_check_info:   uint32_version: 2   uint32_max_mix_channels:   bytes_audio_encode:    "    000    260    000    260   "   bytes_audio_decode:    "    207eC!    000    002    000)    003     017    240    013    270    000p    000    200    000+    002X    017    240    005    334    000p    000    200    000.    003     017    240    t    304    000p    000    200    000@    t`    014    200    t`    000p    000    200    000A    t`    031    000    t`    000p    000    200    000B    t`    031    000    t`    000p    000    200    000P    006@    t    304    005    334    000p    000    200    000Q    022    300    017    240    005    334    000p    000    200    0224Vx   "  n}  nmsg_video_limit {   msg_camera_limit {     str_camera_auth_name:    "Android   "     rpt_video_format {       uint32_width: 320       uint32_height: 240       uint32_max_FPS: 15     }     uint32_video_src_type: 1   }   uint32_screen_width: 1280   uint32_screen_height: 720   uint32_support_arq:   uint32_support_kalman:   uint32_support_qstar:   uint32_support_hwacc:   uint32_fec_type:   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 2     uint32_direct: 2     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 20     uint32_max_bitrate: 1024     uint32_max_MBPS: 24000     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 3     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 4     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 1     uint32_max_width: 480     uint32_max_height: 640     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type: 5     uint32_direct: 2     uint32_max_width: 720     uint32_max_height: 1280     uint32_max_FPS: 30     uint32_max_bitrate: 5120     uint32_max_MBPS: 1500     uint32_FEC_flag: 1     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   rpt_msg_video_codec_limit {     uint32_engine_type:     uint32_direct:     uint32_max_width:     uint32_max_height:     uint32_max_FPS:     uint32_max_bitrate:     uint32_max_MBPS:     uint32_FEC_flag:     uint32_hw_flag:   }   bytes_vp8_enc:    "    377    017    000    000   "   bytes_vp8_dec:    "    377    377    000    000   "   bytes_h264_enc:    "    377    017    000    000   "   bytes_h264_dec:    "    377    377    000    000   "  n}  nmsg_speci_param {   msg_speci_udtparam {     uint32_spciudt_flag: 1     uint32_spciudt_switch: 1   }   msg_speci_vidparam {     uint32_spcivid_width: 640     uint32_spcivid_height: 368     uint32_spcivid_fps: 20     uint32_spcivid_qcleargrade:     uint32_spcivid_fecswh: 1     uint32_spcivid_maxbitrate: 800     uint32_spcivid_minbitrate: 500     uint32_spcivid_smallvidswh:     uint32_spcivid_roletype: 1   }   msg_speci_audparam {     uint32_spciaud_codec: 4129     uint32_spciaud_fs: 48000     uint32_spciaud_ch: 1     uint32_spciaud_duration: 20     uint32_spciaud_bitrate: 32000     uint32_spciaud_aecflag: 1     uint32_spciaud_agcflag: 1     uint32_spciaud_ansflag: 1     uint32_spciaud_vadflag: 1     uint32_spciaud_fecflag: 1     uint32_jitter_minmax_delay_ms: 400     uint32_jitter_maxmax_delay_ms: 1000     uint32_jitter_drop_scalfactor: 100     uint32_jitter_min_delay_ms: 80   }  n}  n]  ",
       "isPb ": 1,
       "spciVideoFECSwh ": 1,
       "clientIp ": "59.37.125.38 ",
@@ -24232,4 +24239,5 @@
   "ctrlBinAbility ": [],
   "endTimestamp ": 1532686980,
   "downBinLostData ": []
-}
+};
+export default datajson;

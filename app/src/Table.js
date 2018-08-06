@@ -10,7 +10,8 @@ class Table extends Component {
     }
     state={
         myChart:null,
-        data:[],
+        option:{},
+        data:null,
         warningLine:1500,
         warningTime:0,
         colors:[ //TODO:颜色显示不够易读
@@ -23,19 +24,82 @@ class Table extends Component {
             "rgba(160,166,208,1)",
             "rgba(160,240,220,1)",
             ],
-        container:null
-    }
-    parseData(){
-        for(var i in this.props.data){
-             var list=[i].concat(this.props.data[i]);
-             this.state.data.push(list);
+        container:null,
+        warningRules:{
+
         }
     }
+    parseData(newdata){
+        var data_t=[];
+        for(var i in newdata){
+            
+             var list=[i].concat(newdata[i]);
+             data_t.push(list);
+        }
+        console.log(data_t);
+        return data_t;
+    }
+    componentWillReceiveProps(props){
+         
+       
+        this.updateData(this.parseData(props.data));
+    }
+    updateData(data){
+        
+        
+        this.state.option.dataset.source=data; 
+        console.log(data,this.state.option);
+        var series=[];
+        //根据数据组数设置 series visualMap
+        var  list=[],i=-1;
+        for (var item in data) {
+            if(i==-1){
+
+            }
+            else {
+                 var temp = {
+                    type: 'piecewise',
+                    min: 0,
+                    max: this.state.warningLine*2,
+                    pieces: [
+                        { gt: this.state.warningLine },
+                        { gt: 0, lte: this.state.warningLine },
+                    ],
+                    color: [this.state.colors[i+4],this.state.colors[i]],
+                    realtime: true,
+                    dimension: i+1
+                };
+                 
+                list.push(temp);
+                 series.push({
+                    type: 'line',
+                    seriesLayoutBy: 'row',
+                    markLine: {
+                        silent: true,
+                        animation: false,
+                        symbol: ["pin", "pin"],
+                        data: [{
+                            yAxis: this.state.warningLine
+                        }
+                        ]
+                    }
+                });
+            }
+            i++;
+        }
+         this.state.option["visualMap"] = list;
+         this.state.option.series=series;
+         console.log(this.state.option);
+         this.state.myChart.clear();
+         this.state.myChart.setOption(this.state.option);
+    }
     componentDidMount(){ 
-        var chart = echarts.init(document.getElementById(this.props.id));
-        this.state.myChart=chart;
+         this.state.myChart= echarts.init(document.getElementById(this.props.id));
+        //var chart=this.state.myChart;
+        this.state.myChart.group="group";
+        echarts.connect('group');
         //图表基础设置
-        var option = {
+        this.state.option = {
             color:this.state.colors,
             title: {
                 text:this.props.title
@@ -71,77 +135,18 @@ class Table extends Component {
             series: [ 
             ]
         }
-        this.parseData();
-        option.dataset.source=this.state.data; 
-
-        //根据数据组数设置 series visualMap
-        var  list=[],i=-1;
-        for (var item in this.props.data) {
-            if(i==-1){
-
-            }
-            else {
-                 var temp = {
-                    type: 'piecewise',
-                    min: 0,
-                    max: this.state.warningLine*2,
-                    pieces: [
-                        { gt: this.state.warningLine },
-                        { gt: 0, lte: this.state.warningLine },
-                    ],
-                    color: [this.state.colors[i+4],this.state.colors[i]],
-                    realtime: true,
-                    dimension: i+1
-                };
-                 
-                list.push(temp);
-                option.series.push({
-                    type: 'line',
-                    seriesLayoutBy: 'row',
-                    markLine: {
-                        silent: true,
-                        animation: false,
-                        symbol: ["pin", "pin"],
-                        data: [{
-                            yAxis: this.state.warningLine
-                        }
-                        ]
-                    }
-                });
-            }
-            i++;
-        }
-        option["visualMap"] = list;
-        chart.setOption(option);
-
-        //图例选中控制treemenu
-        /*
-        chart.on("legendselectchanged",function (params) {
-            // 获取点击图例的选中状态
-            var  isSelected = params.selected[params.name];
-            // 在控制台中打印
-            console.log((isSelected ? '选中了' : '取消选中了') + '图例' + params.name);
-            // 打印所有图例的状态 
-            if(isSelected){
-                s(params.name);
-            }
-            else{
-                us(params.name);
-
-            }
-        });*/
-
-        //全局图表同步x轴
-        chart.group="group";
-        echarts.connect('group');
+        this.updateData();
+         
+      
  
     }
-
+    
     subDimension(dimension){
         this.state.myChart.dispatchAction({
             type: 'legendUnSelect',
              name: dimension 
-        }) 
+        }) ;
+        console.log( dimension,this.state.option);
     }
     addDimension(dimension){
         this.state.myChart.dispatchAction({
@@ -150,47 +155,28 @@ class Table extends Component {
             name:dimension 
         })
     }
+
     render() {
+        var Rules=[]
+        for(var i in this.state.warningRules){
+            Rules.push( <Col span={6}>
+                <div style={{boxAlign:"center"}}>
+                    <div style={{ width:6,height:48,backgroundColor:this.state.colors[i],float:"left"}}/>
+                     
+                    <div style={{ lineHeight:"16px",marginLeft:14,fontSize:12, }}>{this.state.warningRules[i]}</div>
+                     
+                    <div id="warningLine" style={{ lineHeight:"32px", marginLeft:14,fontSize:28,fontWeight:"bold"}}>1500</div>     
+                </div>                    </Col>);
+        }
         return(
         <div >
-            <div id={this.props.id}  style={{height:300,width:"100%"}}>{this.props.id}</div>
+            <div id={this.props.id}  style={{height:400,width:"100%"}}>{this.props.id}</div>
             <div style={{marginLeft:"6%",marginRight:"6%",marginTop:16,marginBottom:32, height:72,backgroundColor:"rgba(220,222,230,0.3)"}}>
                 <Row style={{paddingTop:12, paddingLeft:16,height:72}}>
-                    <Col span={6}>
-                    <div style={{boxAlign:"center"}}>
-                        <div style={{ width:6,height:48,backgroundColor:this.state.colors[0],float:"left"}}/>
-                         
-                        <div style={{ lineHeight:"16px",marginLeft:14,fontSize:12, }}>WARNINGLINE</div>
-                         
-                        <div id="warningLine" style={{ lineHeight:"32px", marginLeft:14,fontSize:28,fontWeight:"bold"}}>1500</div>     
-                    </div>
-                    </Col>
-                    <Col span={6}>
-                    <div style={{boxAlign:"center"}}>
-                        <div style={{ width:6,height:48,backgroundColor:this.state.colors[0],float:"left"}}/>
-                         
-                        <div style={{ lineHeight:"16px",marginLeft:14,fontSize:12, }}>WARNINGLINE</div>
-                         
-                        <div id="warningLine" style={{ lineHeight:"32px", marginLeft:14,fontSize:28,fontWeight:"bold"}}>1500</div>     
-                    </div>                    </Col>
+                     {Rules}
+                    
 
-                    <Col span={6}>
-                    <div style={{boxAlign:"center"}}>
-                        <div style={{ width:6,height:48,backgroundColor:this.state.colors[0],float:"left"}}/>
-                         
-                        <div style={{ lineHeight:"16px",marginLeft:14,fontSize:12, }}>WARNINGLINE</div>
-                         
-                        <div id="warningLine" style={{ lineHeight:"32px", marginLeft:14,fontSize:28,fontWeight:"bold"}}>1500</div>     
-                    </div>                    </Col>
-
-                    <Col span={6}>
-                    <div style={{boxAlign:"center"}}>
-                        <div style={{ width:6,height:48,backgroundColor:this.state.colors[0],float:"left"}}/>
-                         
-                        <div style={{ lineHeight:"16px",marginLeft:14,fontSize:12, }}>WARNINGLINE</div>
-                         
-                        <div id="warningLine" style={{ lineHeight:"32px", marginLeft:14,fontSize:28,fontWeight:"bold"}}>1500</div>     
-                    </div>                    </Col>
+                   
 
                 </Row>
             </div>

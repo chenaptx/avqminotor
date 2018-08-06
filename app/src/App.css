@@ -10,7 +10,7 @@
   font:'';
 }
 
-#Network ,#panel,#Up,#Down,#CPU { 
+#Network ,#panel,#Up,#Down,#CPU ,.panel{ 
   
   background-color: white;
   margin-top:8px;
@@ -42,10 +42,16 @@
   border-Radius:8;
   padding-top: 8px;
   padding-bottom: 8px;
-    
+  overflow: auto;    
  }
  #scrollview{
   overflow: auto;   position: absolute; right: 0px;   width:100%;
+ }
+#scrollview1{
+  overflow: auto;   position: absolute; right: 0px;   width:100%;
+ }
+ #tree{
+  overflow: auto;   
  }
  .topleft{
   vertical-align:middle;
