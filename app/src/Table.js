@@ -1,8 +1,19 @@
  
 import React, { Component } from 'react';
 import CollapsePanel from '../../node_modules/antd/lib/collapse/CollapsePanel';
-import { Row, Col } from '../../node_modules/antd';
+import { Row, Col, InputNumber, Form  } from '../../node_modules/antd';
+import { Select,Modal,Icon  } from 'antd';
+import CollectionCreateForm  from './RulesInput.js'
+var sampleWarningRule=[{name:"上限",threshold:0,use:true,total:0},
+{name:"下限",threshold:0,use:false,total:0},
+{name:"波动阈值",threshold:0,use:false,total:0}]
+const Option = Select.Option;
+const FormItem = Form.Item;
  
+function handleChange(value) {
+    console.log(`selected ${value}`);
+  }
+  
 var echarts = require('echarts');
 class Table extends Component {
     constructor(props){
@@ -25,9 +36,8 @@ class Table extends Component {
             "rgba(160,240,220,1)",
             ],
         container:null,
-        warningRules:{
-
-        }
+        warningRules:{},
+        // tempwarningRules:{}
     }
     parseData(newdata){
         var data_t=[];
@@ -137,10 +147,14 @@ class Table extends Component {
         }
         this.updateData();
          
-      
- 
     }
-    
+    componentWillMount(){
+        for(var i in this.props.data){
+            if(i!="time"){
+            this.state.warningRules[i]=sampleWarningRule;}
+        }
+        // this.state.tempwarningRules=this.state.warningRules;
+     }
     subDimension(dimension){
         this.state.myChart.dispatchAction({
             type: 'legendUnSelect',
@@ -155,32 +169,88 @@ class Table extends Component {
             name:dimension 
         })
     }
+//模态框-用于修改警告规则
+showModal = () => {
+    this.setState({
+      visible: true,
+    });
+  }
+  handleOk()  {
+       
+     this.setState({
+      visible: false,
+    });
+  }
+  handleCancel = (e) => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  } 
+   handleCreate = () => {
+    const form = this.formRef.props.form;
+    form.validateFields((err, values) => {
+      if (err) {
+        return;
+      }
 
+      console.log('Received values of form: ', values);
+      form.resetFields();
+      this.setState({ visible: false });
+    });
+  }
+
+  saveFormRef = (formRef) => {
+    this.formRef = formRef;
+  }
     render() {
-        var Rules=[]
+        var Rules=[];
+        
+         
         for(var i in this.state.warningRules){
-            Rules.push( <Col span={6}>
-                <div style={{boxAlign:"center"}}>
-                    <div style={{ width:6,height:48,backgroundColor:this.state.colors[i],float:"left"}}/>
-                     
-                    <div style={{ lineHeight:"16px",marginLeft:14,fontSize:12, }}>{this.state.warningRules[i]}</div>
-                     
-                    <div id="warningLine" style={{ lineHeight:"32px", marginLeft:14,fontSize:28,fontWeight:"bold"}}>1500</div>     
-                </div>                    </Col>);
+            var average = 24 / this.state.warningRules[i].length;
+             var now=0;
+            for (var j in this.state.warningRules[i]) {
+                
+                if (this.state.warningRules[i][j].use) {
+                    now=j;
+                    Rules.push(<Col  style={{marginLeft:24}}>
+                        <div style={{ boxAlign: "center" }}>
+                            <div style={{marginBottom:16, width: 6, height:48, backgroundColor: this.state.colors[j], float: "left" }} />
+
+                           <div style={{  lineHeight: "16px", marginLeft: 14, fontSize: 12, }}>{i+this.state.warningRules[i][j].name  }</div> 
+                             
+                            <div id="warningLine" style={{marginBottom:16, lineHeight: "32px", marginLeft: 14, fontSize: 32, fontWeight: "bold" }}>{ this.state.warningRules[i][j].threshold} </div>
+                        </div>                    </Col>);
+                        
+                } 
+
+            }
         }
-        return(
-        <div >
-            <div id={this.props.id}  style={{height:400,width:"100%"}}>{this.props.id}</div>
-            <div style={{marginLeft:"6%",marginRight:"6%",marginTop:16,marginBottom:32, height:72,backgroundColor:"rgba(220,222,230,0.3)"}}>
-                <Row style={{paddingTop:12, paddingLeft:16,height:72}}>
-                     {Rules}
-                    
 
-                   
+        return (
+            <div >
+                <div id={this.props.id} style={{ height: 400, width: "100%" }}>{this.props.id}</div>
+                <div style={{ marginLeft: "6%", marginRight: "6%", marginTop: 16, marginBottom: 32, backgroundColor: "rgba(220,222,230,0.3)" }}>
+                    <Row style={{ paddingTop: 12, paddingLeft: 16, }}>
 
-                </Row>
+                        <Col span={23} style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "flex-start" }}>
+                            {Rules}
+                        </Col>
+                        <Col span={1}>
+                            <Icon type="edit" style={{ fontSize: 20, color: this.state.colors[0] }} onClick={this.showModal} />
+                            <CollectionCreateForm
+                                wrappedComponentRef={this.saveFormRef}
+                                visible={this.state.visible}
+                                onCancel={this.handleCancel}
+                                onCreate={this.handleCreate}
+                                warningRules={this.state.warningRules}
+                            />
+
+                        </Col>
+                    </Row>
+                </div>
             </div>
-        </div>
         )
     }
 }

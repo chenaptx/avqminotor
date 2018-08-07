@@ -3,7 +3,7 @@ import './App.css';
  
 import Table from './Table';
 import TimeInput from './TimeInput';
-import { Layout, Menu, Row, Col, Tree, Collapse ,Input, Button ,InputNumber   } from 'antd';
+import {  Row, Col, Tree, Collapse ,Input, Button ,InputNumber   } from 'antd';
 import moment from 'moment';
 
 //import datajson from './data.js ';
@@ -24254,18 +24254,7 @@ var fs = require('fs');
  const TreeNode = Tree.TreeNode;
 
 
-const Panel = Collapse.Panel;
-function getCookie(cname)
-{
-  var name = cname + "=";
-  var ca = document.cookie.split(';');
-  for(var i=0; i<ca.length; i++) 
-  {
-    var c = ca[i].trim();
-    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
-  }
-  return "";
-}
+var Panel=Collapse.Panel;
  
 class App extends Component {
   constructor(props) {
@@ -24461,7 +24450,10 @@ class App extends Component {
       "FrameRate_Down_By":[ ],
       "CPU_Total":[ ],
       "CPU_App":[ ]
+      
     }
+    ,
+    visible: false
   }
   componentWillMount() {
      
@@ -24570,10 +24562,83 @@ class App extends Component {
        }
     }
   }
+  /***交互控制逻辑***/
+
+  //折叠面板-用于收起图表
   onCollapse = (collapsed) => {
      this.setState({ collapsed });
   }
    
+  //树目录选择和多选
+  onSelect = (selectedKeys, info) => {
+    let selectedkey = selectedKeys[0];
+    let anchorElement = document.getElementById(this.key2table(selectedkey));
+    let scrollParent = document.getElementById("scrollview");
+   // this.setState({ lastSeleted: selectedKeys[0] });
+    if (anchorElement) {
+      //scrollParent.scrollTop=anchorElement.offsetTop;// 方法1
+      // anchorElement.scrollIntoView();// 方法2
+      scrollParent.scrollTo({ top: anchorElement.offsetTop, behavior: "smooth" });//方法3
+
+    }
+  }
+
+  onCheck = (checkedKeys, info) => {
+    let difference = checkedKeys.checked.concat(this.checked).filter(v => !checkedKeys.checked.includes(v) || !this.checked.includes(v))
+    if(difference.length>0){
+      console.log("onCheck",difference[0]);
+      var key = this.key2table(difference[0]);
+      if (this.checked.length > checkedKeys.checked.length) {
+        console.log("onCheck","subDimension");
+        this.refs[key].subDimension(this.key2title(difference[0]));
+      }
+      else if (this.checked.length < checkedKeys.checked.length) {
+        console.log("onCheck","addDimension");
+        this.refs[key].addDimension(this.key2title(difference[0]));
+    }
+  }
+    //this.setState({ checked: checkedKeys.checked });
+    this.checked=checkedKeys.checked ;
+  }
+ 
+  //输入组件
+  setTime(value) {
+    this.setState({ time: value });
+  }
+  setAppId(value) {
+    this.setState({ appId: value });
+  }
+  setUserId = (e) => {
+    this.setState({ userId: e.target.value });
+  }
+
+  getInput() {
+    var url = "http://avq.avc.qcloud.com/query/Show_Data?sdkAppId=" + this.state.appId
+      + "&account=" + this.state.userId
+      + "&isUseImSdk=" + 1 + "&isQcloud=" + 0
+      + "&beginTime=" + this.state.time[0].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g, "%3A")
+      + "&endTime=" + this.state.time[1].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g, "%3A")
+      ;
+    fetch(url,
+      {
+        "credentials": "include",
+
+        "headers": {},
+        "referrer": "http://avq.avc.qcloud.com/monitor.html",
+        "referrerPolicy": "no-referrer-when-downgrade",
+        "body": null,
+        "method": "GET",
+        "mode": "cors",
+        "Accept": "application/json, text/javascript"
+      }).then((response) => {
+        // 这里拿到的 response 并不是一个 {name: 'test', age: 1} 对象
+        console.log(response.json());  // 将 response.body 通过 JSON.parse 转换为 JS 对象
+        this.callBackFunc(datajson);
+      })
+      ;
+
+  }
+  //key table title之间的相互转换
   key2table(str) {
     var index = str.indexOf("_");
     if (index > 0) {
@@ -24603,42 +24668,9 @@ class App extends Component {
       }
     }
   }
-  setTime( value){
-    this.setState({time:value});   
-  }
-  setAppId( value){     
-    this.setState({appId:value});   
-  }
-  setUserId=(e) => {
-    this.setState({ userId: e.target.value });
-  }
-  
-  getInput(){ 
-    var url="http://avq.avc.qcloud.com/query/Show_Data?sdkAppId="+this.state.appId
-        +"&account="+this.state.userId
-        +"&isUseImSdk="+1+"&isQcloud="+0
-        +"&beginTime="+this.state.time[0].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g,"%3A")
-        +"&endTime="+ this.state.time[1].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g,"%3A")  
-    ;     
-    fetch(url,
-         {"credentials":"include",
-         
-                "headers":{},
-                "referrer":"http://avq.avc.qcloud.com/monitor.html",
-                "referrerPolicy":"no-referrer-when-downgrade",
-                "body":null,
-                "method":"GET",
-                "mode":"cors",
-                "Accept": "application/json, text/javascript" }).then((response) => {
-                  // 这里拿到的 response 并不是一个 {name: 'test', age: 1} 对象
-                  console.log(response.json());  // 将 response.body 通过 JSON.parse 转换为 JS 对象
-                  this.callBackFunc(datajson);
-                })
-    ;
-    
-  }
+   
 
- 
+ //发送请求回调函数，数据解析
   callBackFunc(data) {
   
     if (data["retCode"] == -1) {
@@ -24801,7 +24833,7 @@ class App extends Component {
  
  
 }
- 
+ //从data到每个图表的data
   getTableData(str) {
      var list = this.table2keys(str);
     var result = {};
@@ -24812,37 +24844,6 @@ class App extends Component {
     }
      return result;
     
-  }
-
-  onSelect = (selectedKeys, info) => {
-    let selectedkey = selectedKeys[0];
-    let anchorElement = document.getElementById(this.key2table(selectedkey));
-    let scrollParent = document.getElementById("scrollview");
-   // this.setState({ lastSeleted: selectedKeys[0] });
-    if (anchorElement) {
-      //scrollParent.scrollTop=anchorElement.offsetTop;// 方法1
-      // anchorElement.scrollIntoView();// 方法2
-      scrollParent.scrollTo({ top: anchorElement.offsetTop, behavior: "smooth" });//方法3
-
-    }
-  }
-
-  onCheck = (checkedKeys, info) => {
-    let difference = checkedKeys.checked.concat(this.checked).filter(v => !checkedKeys.checked.includes(v) || !this.checked.includes(v))
-    if(difference.length>0){
-      console.log("onCheck",difference[0]);
-      var key = this.key2table(difference[0]);
-      if (this.checked.length > checkedKeys.checked.length) {
-        console.log("onCheck","subDimension");
-        this.refs[key].subDimension(this.key2title(difference[0]));
-      }
-      else if (this.checked.length < checkedKeys.checked.length) {
-        console.log("onCheck","addDimension");
-        this.refs[key].addDimension(this.key2title(difference[0]));
-    }
-  }
-    //this.setState({ checked: checkedKeys.checked });
-    this.checked=checkedKeys.checked ;
   }
  
   change2selected(name){
@@ -24892,14 +24893,16 @@ class App extends Component {
               style={{ margin: 8, marginLeft: 16, marginRight: 16, boxShadow: "0px 0px 8px #9999998a", borderRadius: "8px" }}
               defaultActiveKey={['1']}
               bordered={false}  > */}
-              <div header="目录" style={{ margin: 0 }} key="1"  class="panel"  
-          style={{  marginTop:8,
-            marginLeft: 16, marginRight: 16, boxShadow: "0px 0px 8px #9999998a", borderRadius: "8px" }}>
+              <div header="目录" style={{ margin: 0 }} key="1" class="panel"
+                style={{
+                  marginTop: 8,
+                  marginLeft: 16, marginRight: 16, boxShadow: "0px 0px 8px #9999998a", borderRadius: "8px"
+                }}>
                 <Tree ref="treemenu"
                   checkable={true} defaultExpandAll={true} checkStrictly={true}
                   multiple={false}
-                  style={{  margin:8}}
-                  onCheck={this.onCheck} 
+                  style={{ margin: 8 }}
+                  onCheck={this.onCheck}
                   //checkedKeys={this.state.checked}
                   onSelect={this.onSelect} selectedKeys={this.state.selectedKeys}
                   style={{ width: "100%", fontSize: "10px" }}
@@ -24907,11 +24910,12 @@ class App extends Component {
                   {this.renderTreeNodes(this.state.treeData)}
                 </Tree>
               </div>
-            {/* </Collapse> */}
-          </div>
+              {/* </Collapse> */}
+            </div>
           </Col>
           <Col span={18}  >
             <div id="scrollview" style={{ marginTop: 8, height: window.innerHeight - 56, paddingRight: 4, borderRadius: "8px" }} >
+            
               <Collapse bordered={false}
                 defaultActiveKey={['1']}
                 style={{ boxShadow: "0px 0px 8px #9999998a", borderRadius: "8px" }}>
