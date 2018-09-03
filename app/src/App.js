@@ -177,9 +177,7 @@ class App extends Component {
 
         }]
       }],
-    time:[],
-    appId:1400027849,
-    userId:"chentest1",
+    
     collapsed: false,
    // checked: [],//选中的目录项->会显示的图表
     lastSeleted: "",//上次选中的跳转目录
@@ -227,15 +225,21 @@ class App extends Component {
     ,
     visible: false
   }
+  time=[];
+  appId=1400027849;
+  userId="chentest";
   componentWillMount() {
- 
+    this.appId=1400027849;
+    this.userId="chentest";
+    this.appId=parseInt( localStorage.getItem("appId"));
+    this.userId=localStorage.getItem("userId");
+    console.log(localStorage, this.state);
   }
-   
+   /***初始化***/
   componentDidMount(){
     var refss=this.refs;
     var titles=this.titles;
-   // document.cookie="_ga=GA1.2.186138298.1532683988; pgv_pvi=5543704576; qcloud_uid=8af35ef98f2a3bf194e953a6530a1e4f; tencent_uid=556925f6626f40fa70a7677b8e51b556; qcloud_from=qcloud.google.seo-1533131405654; PHPSESSID=89v8duf9q0leaess0aj8vr5nh3; qcloud_visitId=a333a4d801596e7bee4cb1fb450baee7; pgv_si=s527192064; lusername=zt371%40vip.qq.com; loginType=email; lastLoginType=email; uin=o100000483206; tinyid=144115199187172859; skey=qoS29NskGLqAmrlzf5YDE3fSTLgzhrH-v1th8A0nbJg_; appid=1253488539; ownerUin=100000483206"
-
+ 
     var fun = function (str) {
       for (var s in  titles) {
         if ( titles[s] == str) {
@@ -243,8 +247,10 @@ class App extends Component {
         }
       }
     }
-
-    function selectkeyintree(str,tree){
+    
+   
+   
+   /* function selectkeyintree(str,tree){
        for(var child in tree.props.children){
          if(tree.props.children[child].key==str){
           return tree.props.children[child];
@@ -278,7 +284,7 @@ class App extends Component {
            }
       });
       }
-    }
+    }*/
      
     window.onresize = function () {
        for (var item in refss) {
@@ -298,8 +304,7 @@ class App extends Component {
   renderTreeNodes = (data) => {
     return data.map((item) => {
       if (item.children) {
-        console.log( item.children.length==0 );
-        return (
+         return (
           <TreeNode title={item.title} key={item.key} dataRef={item}  
           disableCheckbox={item.checkable} selectable={true} style={{fontSize:12,padding:0,margin:0 }}  >
             {this.renderTreeNodes(item.children)}
@@ -342,46 +347,54 @@ class App extends Component {
   onSelect = (selectedKeys, info) => {
     let selectedkey = selectedKeys[0];
     let anchorElement = document.getElementById(this.key2table(selectedkey));
+     
     let scrollParent = document.getElementById("scrollview");
      if (anchorElement) {
       //scrollParent.scrollTop=anchorElement.offsetTop;// 方法1
       // anchorElement.scrollIntoView();// 方法2
       scrollParent.scrollTo({ top: anchorElement.offsetTop, behavior: "smooth" });//方法3
-
+       
     }
+    window.location.hash=this.key2table(selectedkey);
   }
 
+//树目录多选，由于从tooltip到树多选框的状态同步难以实现（多选框状态不知道怎么改）加之tooltip可以控制显示隐藏，暂且取消这个功能
   onCheck = (checkedKeys, info) => {
     let difference = checkedKeys.checked.concat(this.checked).filter(v => !checkedKeys.checked.includes(v) || !this.checked.includes(v))
     if(difference.length>0){
        var key = this.key2table(difference[0]);
-    //   if (this.checked.length > checkedKeys.checked.length) {
-    //      this.refs[key].subDimension(this.key2title(difference[0]));
-    //   }
-    //   else if (this.checked.length < checkedKeys.checked.length) {
-    //      this.refs[key].addDimension(this.key2title(difference[0]));
-    // }
+      if (this.checked.length > checkedKeys.checked.length) {
+         this.refs[key].subDimension(this.key2title(difference[0]));
+      }
+      else if (this.checked.length < checkedKeys.checked.length) {
+         this.refs[key].addDimension(this.key2title(difference[0]));
+    }
   }
      this.checked=checkedKeys.checked ;
   }
  
   //输入组件
   setTime(value) {
-    this.setState({ time: value });
+    this.time=value;
   }
   setAppId(value) {
-    this.setState({ appId: value });
+   // this.setState({ appId: value });
+   this.appId=value;
+    localStorage.setItem("appId",value);
+     
   }
   setUserId = (e) => {
-    this.setState({ userId: e.target.value });
+  //  this.setState({userId: e.target.value });
+    this.userId=e.target.value;
+    localStorage.setItem("userId",e.target.value);
   }
-
+/***请求数据***/
   getInput(callBackFunc) {
-    var url = "http://avq.avc.qcloud.com/query/Show_Data?sdkAppId=" + this.state.appId
-      + "&account=" + this.state.userId
+    var url = "http://avq.avc.qcloud.com/query/Show_Data?sdkAppId=" + this.appId
+      + "&account=" + this.userId
       + "&isUseImSdk=" + 1 + "&isQcloud=" + 0
-      + "&beginTime=" + this.state.time[0].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g, "%3A")
-      + "&endTime=" + this.state.time[1].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g, "%3A")
+      + "&beginTime=" + this.time[0].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g, "%3A")
+      + "&endTime=" + this.time[1].format("YYYY-MM-DD+HH:mm:ss").replace(/:/g, "%3A")
       ;
       var ret={};
     fetch(url,
@@ -401,9 +414,180 @@ class App extends Component {
       }).then(function(data) {    
         ret=data;   
         callBackFunc(ret);
-      }) ;
-      
-  }
+        });
+
+ }
+        //发送请求回调函数，数据解析
+        callBackFunc(data) {
+          console.log(data);
+          if (data["retCode"] == -1) {
+            window.href = "http://avq.avc.qcloud.com/monitor.html";
+            return;
+          }
+          if (data["retCode"] != 0) {
+            alert(data["errMsg"]);
+            return;
+          }
+
+          var infoAlloc = [];
+          var enterAbility = [];
+
+          var downUdtLostRates = [];
+          var upLostRates = [];
+          var udtUpLostRates = [];
+
+          var strEnterAbility = [];
+          var strInfoAlloc = [];
+
+          var strDownPacketCount = [];
+          var strDownUdtPacketCount = [];
+
+          var strUpPacketCount = [];
+          var strUdtUpPacketCount = [];
+          var downLostRateMap = [];
+          var basicInfo;
+
+          alert(data["downLostData"].length);
+          if (data["downLostData"] != undefined && data["downLostData"].length > 0) {
+            basicInfo = data["downLostData"][0];
+
+          } else if (data["downBinLostData"] != undefined && data["downBinLostData"].length > 0) {
+            basicInfo = data["downBinLostData"][0];
+
+          }
+
+          function invertUTC2Local(msec) {
+            var timeDiffOfUTC = 0; // (new Date()).getTimezoneOffset() * 60000;
+
+            var time = moment(msec - timeDiffOfUTC);
+            console.log(timeDiffOfUTC, msec, time);
+            return time.format("hh:mm:ss");
+
+          }
+          data["infoAlloc"].forEach((value) => {
+            var serverTime = invertUTC2Local(value["serverTime"]);
+            infoAlloc.push([serverTime, 50]);
+            strInfoAlloc[serverTime] = value["strInfoAlloc"];
+          });
+          var preServerTime = 0;
+          var tempdata = this.state.data;
+          for (var item in this.state.data) {
+            tempdata[item] = [];
+          }
+
+          data["downLostData"].forEach((value) => {
+
+            var serverTime = invertUTC2Local(value["serverTime"]);
+            if (preServerTime != 0) {
+              for (; serverTime - preServerTime > 7000;) {
+                preServerTime += 2000;
+                tempdata["time"].push(preServerTime);
+                tempdata["BitRate_Up_Total"].push(0);
+                tempdata["Network_LostRate_Down"].push(0);
+                tempdata["BitRate_Down_Total"].push(0);
+                tempdata["Network_DelayedTime"].push(0);
+                downUdtLostRates.push([preServerTime, 0]);
+                udtUpLostRates.push([preServerTime, 0]);
+                tempdata["FrameRate_Up_Video"].push(0);
+                tempdata["BitRate_Up_Video"].push(0);
+                tempdata["FrameRate_Up_By"].push(0);
+                tempdata["BitRate_Up_By"].push(0);
+                tempdata["BitRate_Up_Audio"].push(0);
+                tempdata["BitRate_Down_Video"].push(0);
+                tempdata["FrameRate_Down_Video"].push(0);
+                tempdata["BitRate_Down_Big"].push(0);
+                tempdata["FrameRate_Down_By"].push(0);
+                tempdata["BitRate_Down_By"].push(0);
+                tempdata["BitRate_Down_Audio"].push(0);
+                tempdata["CPU_App"].push(0);
+                tempdata["CPU_Total"].push(0);
+
+                strDownPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
+                strDownUdtPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
+                strUdtUpPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
+              }
+            }
+            preServerTime = serverTime;
+            tempdata["time"].push(serverTime);
+            downUdtLostRates.push([serverTime, value["downUdtLostRate"]]);
+            udtUpLostRates.push([serverTime, value["udtUpLostRate"]]);
+
+            tempdata["BitRate_Up_Total"].push(value["upBitRate"]);
+
+            tempdata["Network_LostRate_Down"].push(value["downLostRate"]);
+            tempdata["BitRate_Down_Total"].push(value["downBitRate"]);
+            downLostRateMap[serverTime / 1000] = value;
+            tempdata["Network_DelayedTime"].push(value["delay"]);
+            tempdata["FrameRate_Up_Video"].push(value["upBigFrameRate"]);
+            tempdata["BitRate_Up_Video"].push(value["upBigBitRate"]);
+            tempdata["FrameRate_Up_By"].push(value["upSubViewFrameRate"]);
+            tempdata["BitRate_Up_By"].push(value["upSubViewBitRate"]);
+            tempdata["BitRate_Up_Audio"].push(value["upAudioBitRate"]);
+
+            tempdata["BitRate_Down_Video"].push(value["downVideoBitRate"]);
+            tempdata["FrameRate_Down_Video"].push(value["downBigFrameRate"]);
+            tempdata["BitRate_Down_Big"].push(value["downBigBitRate"]);
+            tempdata["FrameRate_Down_By"].push(value["downSubViewFrameRate"]);
+            tempdata["BitRate_Down_By"].push(value["downSubViewBitRate"]);
+            tempdata["BitRate_Down_Audio"].push(value["downAudioBitRate"]);
+
+            tempdata["CPU_App"].push(value["appCpuUsage"]);
+            tempdata["CPU_Total"].push(value["totalCpuUsage"]);
+
+            strDownPacketCount[serverTime] = "应收包数：" + value["downTotalNum"] + "<br>" + "实收包数：" + value["downRealNum"];
+            strDownUdtPacketCount[serverTime] = "UDT应收包数：" + value["downUdtTotalNum"] + "<br>" + "UDT实收包数：" + value["downUdtRealNum"];
+            strUdtUpPacketCount[serverTime] = "应收包数：" + value["udtUpTotalNum"] + "<br>" + "实收包数：" + value["udtUpRealNum"];
+          });
+
+
+          preServerTime = 0;
+          data["upLostData"].forEach((value) => {
+            var serverTime = invertUTC2Local(value["serverTime"]);
+            if (preServerTime != 0) {
+              for (; serverTime - preServerTime > 10000;) {
+                preServerTime += 5000;
+                tempdata["Network_LostRate_Up"].push(0);
+                strUpPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
+              }
+            }
+            preServerTime = serverTime;
+            tempdata["Network_LostRate_Up"].push(value["upLostRate"]);
+            strUpPacketCount[serverTime] = "应收包数：" + value["totalNum"] + "<br>" + "实收包数：" + value["realNum"];
+          });
+
+          strEnterAbility = [];
+          data["enterRoomAbility"].forEach((value) => {
+            var serverTime = invertUTC2Local(value["serverTime"]);
+            enterAbility.push([serverTime, 70]);
+            strEnterAbility[serverTime] = value;
+          });
+          data["enterRoomBinAbility"].forEach((value) => {
+            var serverTime = invertUTC2Local(value["serverTime"]);
+            enterAbility.push([serverTime, 70]);
+            strEnterAbility[serverTime] = value["enterRoomAbility"];
+          });
+          console.log(tempdata);
+          this.setState({
+            data: tempdata
+          });
+
+
+        }
+
+        //从data到每个图表的data
+        getTableData(str) {
+          var list = this.table2keys(str);
+          var result = {};
+          result["time"] = this.state.data["time"];
+          for (var it in list) {
+            result[this.key2title(list[it])] = this.state.data[list[it]];
+          }
+          return result;
+        }
+        search() {
+          this.getInput(this.callBackFunc.bind(this));
+        }
+  /***辅助函数***/
   //key table title之间的相互转换
   key2table(str) {
     var index = str.indexOf("_");
@@ -434,184 +618,7 @@ class App extends Component {
       }
     }
   }
-   
-
- //发送请求回调函数，数据解析
-  callBackFunc(data) {
-  console.log(data);
-    if (data["retCode"] == -1) {
-        window.href = "http://avq.avc.qcloud.com/monitor.html";
-        return;
-    }
-     if(data["retCode"]!=0)
-    {
-        alert(data["errMsg"]);
-        return;
-    }
-    
-    var infoAlloc=[];
-    var enterAbility=[];
-   
-    var downUdtLostRates=[];
-    var upLostRates=[];
-    var udtUpLostRates=[];
-   
-    var strEnterAbility=[];
-    var strInfoAlloc=[];
-   
-    var strDownPacketCount=[];
-    var strDownUdtPacketCount=[];
   
-    var strUpPacketCount=[];
-    var strUdtUpPacketCount=[];
-    var downLostRateMap = [];
-    var basicInfo;
-    
-    alert(data["downLostData"].length);
-    if(data["downLostData"]!=undefined && data["downLostData"].length>0)
-    {
-        basicInfo = data["downLostData"][0];
-       
-    }
-    else if(data["downBinLostData"]!=undefined && data["downBinLostData"].length>0)
-    {
-        basicInfo = data["downBinLostData"][0];
-         
-    }
-    
-    function invertUTC2Local(msec)
-    {
-      var timeDiffOfUTC =0;// (new Date()).getTimezoneOffset() * 60000;
-      
-      var time=moment(msec - timeDiffOfUTC);
-      console.log(timeDiffOfUTC,msec,time);
-      return time.format("hh:mm:ss");
-         
-    }
-    data["infoAlloc"].forEach((value)=>{
-        var serverTime = invertUTC2Local(value["serverTime"]);
-        infoAlloc.push([serverTime, 50]);
-        strInfoAlloc[serverTime] = value["strInfoAlloc"];
-    });
-     var preServerTime = 0;
-    var tempdata=this.state.data;
-    for(var item in this.state.data){
-      tempdata[item]=[];
-    }
- 
-     data["downLostData"].forEach((value)=>{
-
-        var serverTime = invertUTC2Local(value["serverTime"]);
-        if(preServerTime != 0)
-        {
-            for( ; serverTime-preServerTime>7000; )
-            {
-                preServerTime += 2000;
-                tempdata["time"].push(preServerTime);
-               tempdata["BitRate_Up_Total"].push(0);
-               tempdata["Network_LostRate_Down"].push(0);
-               tempdata["BitRate_Down_Total"].push(0);
-               tempdata["Network_DelayedTime"].push(0);
-                downUdtLostRates.push([preServerTime, 0]);
-                udtUpLostRates.push([preServerTime, 0]);
-               tempdata["FrameRate_Up_Video"].push(0);
-               tempdata["BitRate_Up_Video"].push(0);
-               tempdata["FrameRate_Up_By"].push(0);
-               tempdata["BitRate_Up_By"].push(0);
-               tempdata["BitRate_Up_Audio"].push(0);
-               tempdata["BitRate_Down_Video"].push(0);
-               tempdata["FrameRate_Down_Video"].push(0);
-               tempdata["BitRate_Down_Big"].push(0);
-               tempdata["FrameRate_Down_By"].push(0);
-               tempdata["BitRate_Down_By"].push(0);
-               tempdata["BitRate_Down_Audio"].push(0);
-               tempdata["CPU_App"].push(0);
-               tempdata["CPU_Total"].push(0);
-
-                strDownPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
-                strDownUdtPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
-                strUdtUpPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
-            }
-        }
-        preServerTime = serverTime;
-        tempdata["time"].push(serverTime);
-        downUdtLostRates.push([serverTime, value["downUdtLostRate"]]);
-        udtUpLostRates.push([serverTime, value["udtUpLostRate"]]);
-        
-       tempdata["BitRate_Up_Total"].push(value["upBitRate"]);
-     
-       tempdata["Network_LostRate_Down"].push(value["downLostRate"]);
-       tempdata["BitRate_Down_Total"].push( value["downBitRate"]);
-        downLostRateMap[serverTime/1000] = value;
-       tempdata["Network_DelayedTime"].push( value["delay"]);
-       tempdata["FrameRate_Up_Video"].push(value["upBigFrameRate"]);
-       tempdata["BitRate_Up_Video"].push(value["upBigBitRate"]);
-       tempdata["FrameRate_Up_By"].push(value["upSubViewFrameRate"]);
-       tempdata["BitRate_Up_By"].push(value["upSubViewBitRate"]);
-       tempdata["BitRate_Up_Audio"].push(value["upAudioBitRate"]);
-
-       tempdata["BitRate_Down_Video"].push(value["downVideoBitRate"]);
-       tempdata["FrameRate_Down_Video"].push( value["downBigFrameRate"]);
-       tempdata["BitRate_Down_Big"].push(value["downBigBitRate"]);
-       tempdata["FrameRate_Down_By"].push(value["downSubViewFrameRate"]);
-       tempdata["BitRate_Down_By"].push(value["downSubViewBitRate"]);
-       tempdata["BitRate_Down_Audio"].push(value["downAudioBitRate"]);
-
-       tempdata["CPU_App"].push(value["appCpuUsage"]);
-       tempdata["CPU_Total"].push(value["totalCpuUsage"]);
-
-        strDownPacketCount[serverTime] = "应收包数：" + value["downTotalNum"] + "<br>" + "实收包数：" + value["downRealNum"];
-        strDownUdtPacketCount[serverTime] = "UDT应收包数：" + value["downUdtTotalNum"] + "<br>" + "UDT实收包数：" + value["downUdtRealNum"];
-        strUdtUpPacketCount[serverTime] = "应收包数：" + value["udtUpTotalNum"] + "<br>" + "实收包数：" + value["udtUpRealNum"];
-    });
-
-
-    preServerTime = 0;
-     data["upLostData"].forEach((value)=>{
-        var serverTime = invertUTC2Local(value["serverTime"]);
-        if(preServerTime != 0)
-        {
-            for( ; serverTime-preServerTime>10000; )
-            {
-                preServerTime += 5000;
-                 tempdata["Network_LostRate_Up"].push(0);
-                strUpPacketCount[preServerTime] = "应收包数：" + 0 + "<br>" + "实收包数：" + 0;
-            }
-        }
-        preServerTime = serverTime;
-         tempdata["Network_LostRate_Up"].push(value["upLostRate"]);
-        strUpPacketCount[serverTime] = "应收包数：" + value["totalNum"] + "<br>" + "实收包数：" + value["realNum"];
-    });
-
-     strEnterAbility = [];
-     data["enterRoomAbility"].forEach((value)=>{
-        var serverTime = invertUTC2Local(value["serverTime"]);
-        enterAbility.push([serverTime, 70]);
-        strEnterAbility[serverTime] = value;
-    });
-    data["enterRoomBinAbility"].forEach((value)=>{
-        var serverTime = invertUTC2Local(value["serverTime"]);
-        enterAbility.push([serverTime, 70]);
-        strEnterAbility[serverTime] = value["enterRoomAbility"];
-    });
-    console.log(tempdata);
-    this.setState({data:tempdata});
- 
- 
-}
- //从data到每个图表的data
-  getTableData(str) {
-     var list = this.table2keys(str);
-    var result = {};
-    result["time"] = this.state.data["time"];
-    for (var it in list) {
-      result[this.key2title(list[it])] = this.state.data[list[it]];
-    }
-     return result;   
-  }
- search(){
-    this.getInput(this.callBackFunc.bind(this));
-  }
   change2selected(name){
    //TODO:子组件调用父组件函数竟然无法引用父组件的state refs??
    
@@ -644,8 +651,8 @@ backgroundRepeat:"repeat-x"}} >
               </div> */}
 
               <div class="iconsright" style={{ width: 700 }}  >
-                <InputNumber eplaceholder="App Id" style={{ width: "15%", marginRight: "1%" }} onChange={this.setAppId.bind(this) }/>
-                <Input  placeholder="User Id" style={{ width: "15%", marginRight: "1%" }} onChange={ this.setUserId.bind(this) } />
+                <InputNumber defaultValue={this.appId} placeholder="App Id" style={{ width: "15%", marginRight: "1%" }} onChange={this.setAppId.bind(this) }/>
+                <Input defaultValue={this.userId}  placeholder="User Id" style={{ width: "15%", marginRight: "1%" }} onChange={ this.setUserId.bind(this) } />
                 <TimeInput style={{ float: "right" }} setValue={this.setTime.bind(this)} />
                 <Button style={{ float: "right",   }} type="primary" icon="search" 
                   class="icon" onClick={this.search.bind(this)} >
