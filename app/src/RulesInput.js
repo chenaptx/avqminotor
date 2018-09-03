@@ -25,26 +25,21 @@ const CollectionCreateForm = Form.create()(
           <Row style={{ marginBottom: 16, display: "flex", flexDirection: "row", }}>
 
             <FormItem style={{ lineHeight: "16px", marginLeft: 8, marginRight: 16 }} >
-            {getFieldDecorator('Select'+i)(
-            <Select defaultValue={i + this.props.warningRules[i][now].name}  
-                onChange={function (value) {
-                  console.log(i, "onchange", value)
-                 
-                }.bind(this)}
+            {getFieldDecorator([i,"type"],{initialValue:i + this.props.warningRules[i][now].name})(
+            <Select  
+                
               >
-                <Option style={{ fontSize: 12 }} value={0}>{i + this.props.warningRules[i][0].name}</Option>
-                <Option style={{ fontSize: 12 }} value={1}>{i + this.props.warningRules[i][1].name}</Option>
-                <Option style={{ fontSize: 12 }} value={2} >{i + this.props.warningRules[i][2].name}</Option>
+                <Option style={{ fontSize: 12 }} value={i + this.props.warningRules[i][0].name}>{i + this.props.warningRules[i][0].name}</Option>
+                <Option style={{ fontSize: 12 }} value={i + this.props.warningRules[i][1].name}>{i + this.props.warningRules[i][1].name}</Option>
+                <Option style={{ fontSize: 12 }} value={i + this.props.warningRules[i][2].name} >{i + this.props.warningRules[i][2].name}</Option>
               </Select>)}
             </FormItem>
 
             <FormItem style={{ lineHeight: "16px", marginLeft: 8, marginRight: 16 }} >
 
-               {getFieldDecorator("threshold"+i)( <InputNumber  value={this.props.warningRules[i][now].threshold}
-                onChange={function (value) {
-                  console.log(i, "onchange", value)
-               
-                }.bind(this)}>
+               {getFieldDecorator([i,"threshold"],{initialValue:this.props.warningRules[i][now].threshold})( 
+               <InputNumber   
+                >
 
               </InputNumber >)}
 
@@ -66,26 +61,7 @@ const CollectionCreateForm = Form.create()(
         >
           <Form layout="vertical">
           {RulesSettings}
-            <FormItem label="Title">
-              {getFieldDecorator('title', {
-                rules: [{ required: true, message: 'Please input the title of collection!' }],
-              })(
-                <Input />
-              )}
-            </FormItem>
-            <FormItem label="Description">
-              {getFieldDecorator('description')(<Input type="textarea" />)}
-            </FormItem>
-            <FormItem className="collection-create-form_last-form-item">
-              {getFieldDecorator('modifier', {
-                initialValue: 'public',
-              })(
-                <Radio.Group>
-                  <Radio value="public">Public</Radio>
-                  <Radio value="private">Private</Radio>
-                </Radio.Group>
-              )}
-            </FormItem>
+           
           </Form>
         </Modal>
       );
