@@ -1,0 +1,41 @@
+minitor前端说明
+目录结构：
+AVGMONITORPROJ
+-.vscode
+-node_modules
+-app
+ -package.json 配置文件
+ -package-lock.json 配置文件
+ -config-overrides.js 按需加载antd
+ -src
+  -App.js 主文件，包含 top,scrollmenu(树目录),scrollview(图表)
+    局部变量
+        titles 数组，用于中英文对照翻译图表标题
+        checked 数组，用于记录上一次多选框选择情况//现已废弃
+        time 时间数组，[起始时间，结束时间]
+        appId 暂存的输入的appId componentWillMount初始化时从Localstorage读取
+        userId 暂存的输入的userId componentWillMount初始化时从Localstorage读取
+        state:{
+            treeData 用于渲染treemenu
+            lastSeleted 上次选中的跳转目录
+            dimensions 图表数据维度
+            data 按维度储存解析过后的数据
+        }
+     componentDidMount()初始化注册多选的监听函数//现已废弃
+                              注册resize监听函数，自适应大小
+     其他函数参见注释
+  -App.css
+  -RulesInput.js 用于输入warning rules
+  -Table.js 图标组件，接收数组格式的多维度数据,生成echart
+  -TimeInput.js 时间输入组件
+  -index.js 默认文件
+  -index.css
+  -background.png 原定顶部背景图（参见axure稿件里）但是尚未实现//TODO
+  -logo.svg 
+ -public
+使用方法
+    npm install:安装package.json里的依赖库
+    npm run-script build:编译
+    npm start: 自动检测生成测试版本（http://avq2.qcloud.com/本地访问测试页面）
+PS:
+    
