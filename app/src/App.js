@@ -176,10 +176,8 @@ class App extends Component {
           key: 'CPU_App',
 
         }]
-      }],
-    
-    collapsed: false,
-   // checked: [],//选中的目录项->会显示的图表
+      }],  
+ 
     lastSeleted: "",//上次选中的跳转目录
     dimensions:[
       "Network_DelayedTime",
@@ -222,8 +220,7 @@ class App extends Component {
       "CPU_App":[ ]
       
     }
-    ,
-    visible: false
+  
   }
   time=[];
   appId=1400027849;
@@ -240,17 +237,15 @@ class App extends Component {
     var refss=this.refs;
     var titles=this.titles;
  
-    var fun = function (str) {
+   /* var fun = function (str) {
       for (var s in  titles) {
         if ( titles[s] == str) {
           return s;
         }
       }
     }
-    
    
-   
-   /* function selectkeyintree(str,tree){
+    function selectkeyintree(str,tree){
        for(var child in tree.props.children){
          if(tree.props.children[child].key==str){
           return tree.props.children[child];
@@ -314,7 +309,7 @@ class App extends Component {
       return <TreeNode  disableCheckbox={item.checkable} style={{fontSize:12 }} {...item} />;
     });
   }
-  renderMutibleScreens(data){//TODO:多路下行视频，需要动态添加到tree里  
+  renderMutibleScreens(data){//TODO:多路下行视频，需要动态添加到tree里  ，没测试过
     var item;
     var i=0;
     for( item in this.state.treeData){
@@ -339,9 +334,7 @@ class App extends Component {
   /***交互控制逻辑***/
 
   //折叠面板-用于收起图表
-  onCollapse = (collapsed) => {
-     this.setState({ collapsed });
-  }
+  
    
   //树目录选择和多选
   onSelect = (selectedKeys, info) => {
@@ -628,10 +621,10 @@ class App extends Component {
    }
   render() {
     return (
-      <div style={{minWidth:720, overflow:"auto", 
+      <div style={{minWidth:960, overflow:"auto", 
       position: "fixed", width:"100%",
       backgroundImage:"url('background.png')",
-backgroundRepeat:"repeat-x"}} >
+      backgroundRepeat:"repeat-x"}} >
         <Row >  
           <Col   span={24}>
           
@@ -650,7 +643,7 @@ backgroundRepeat:"repeat-x"}} >
                 }} />
               </div> */}
 
-              <div class="iconsright" style={{ width: 700 }}  >
+              <div class="iconsright"  style={{width:660}} >
                 <InputNumber defaultValue={this.appId} placeholder="App Id" style={{ width: "15%", marginRight: "1%" }} onChange={this.setAppId.bind(this) }/>
                 <Input defaultValue={this.userId}  placeholder="User Id" style={{ width: "15%", marginRight: "1%" }} onChange={ this.setUserId.bind(this) } />
                 <TimeInput style={{ float: "right" }} setValue={this.setTime.bind(this)} />
